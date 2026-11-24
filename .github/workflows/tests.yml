@@ -7,13 +7,14 @@ on:
 
 jobs:
   backend:
+    env:
+      SECRET_KEY: ci-test-secret-not-used-in-production
+      DATABASE_URL: sqlite:///./ci.db
     name: Backend (pytest)
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: backend
-    env:
-      SECRET_KEY: ci-test-secret-not-used-in-production
     steps:
       - uses: actions/checkout@v5
 
