@@ -1,5 +1,28 @@
-backend/.venv/
-todos.db
+# ---------- Secrets ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Python ----------
 __pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---------- Local databases ----------
+*.db
+*.sqlite3
+
+# ---------- Node / frontend ----------
+node_modules/
+dist/
+*.log
+
+# ---------- IDE / OS ----------
 .idea/
-backend/.env
+.vscode/
+.DS_Store
+Thumbs.db

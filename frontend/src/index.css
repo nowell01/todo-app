@@ -1,0 +1,189 @@
+:root {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #1f2328;
+  background: #f6f7f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e3e6ea;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #cfd4da;
+}
+
+button {
+  background: #2f6feb;
+  border-color: #2f6feb;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button.secondary {
+  background: #fff;
+  color: #1f2328;
+  border-color: #cfd4da;
+}
+
+button.danger {
+  background: #fff;
+  color: #c62828;
+  border-color: #f0b4b4;
+}
+
+button.link {
+  background: none;
+  border: none;
+  color: #2f6feb;
+  padding: 0;
+}
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 360px;
+  margin: 40px auto;
+}
+
+.new-todo {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto auto;
+  gap: 8px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 20px 0 12px;
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.tab {
+  background: #fff;
+  color: #1f2328;
+  border-color: #cfd4da;
+}
+
+.tab.active {
+  background: #1f2328;
+  border-color: #1f2328;
+  color: #fff;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #e3e6ea;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.todo.editing {
+  flex-wrap: wrap;
+}
+
+.todo .body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo.done .title {
+  text-decoration: line-through;
+  color: #8a9199;
+}
+
+.description {
+  font-size: 0.9em;
+  color: #59636e;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.badge {
+  font-size: 0.8em;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.badge.p1 {
+  background: #fde7e7;
+  color: #b42318;
+}
+
+.badge.p2 {
+  background: #eef2f6;
+  color: #475467;
+}
+
+.badge.p3 {
+  background: #e8f5ee;
+  color: #1a7f4b;
+}
+
+.error {
+  color: #c62828;
+}
+
+.empty {
+  color: #8a9199;
+  text-align: center;
+}
+
+.load-more {
+  display: block;
+  margin: 16px auto 0;
+}
